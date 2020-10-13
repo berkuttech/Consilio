@@ -1,7 +1,7 @@
 ﻿{
-  "SystemName": "DefaultClean",
-  "FriendlyName": "Default clean",
+  "SystemName": "Consilio",
+  "FriendlyName": "Consilio Theme",
   "SupportRTL": true,
-  "PreviewImageUrl": "~/Themes/DefaultClean/preview.jpg",
-  "PreviewText": "The 'DefaultClean' site theme"
+  "PreviewImageUrl": "~/Themes/Consilio/preview.jpg",
+  "PreviewText": "The 'Consilio' site theme"
 }
