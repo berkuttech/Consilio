@@ -45,6 +45,22 @@
     <!-- We copy the \Logs directory -->
     <Content Include="Logs\**" CopyToPublishDirectory="PreserveNewest" />
 
+    <None Remove="Themes\Consilio\Views\Shared\Components\Logo\Default.cshtml" />
+    <Content Include="Themes\Consilio\Views\Shared\Components\Logo\Default.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Remove="wwwroot\icons\icons_0\favicon.ico" />
+    <None Remove="Themes\Consilio\Views\Shared\Components\Footer\Default.cshtml" />
+    <Content Include="Themes\Consilio\Views\Shared\Components\Footer\Default.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <None Remove="Themes\Consilio\Views\Shared\Components\TopicBlock\Default.cshtml" />
+    <Content Include="Themes\Consilio\Views\Shared\Components\TopicBlock\Default.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
@@ -59,6 +75,12 @@
   <ItemGroup>
     <Folder Include="Plugins\" />
     <Folder Include="Themes\Consilio\" />
+    <Folder Include="Themes\Consilio\Views\Shared\Components\" />
+    <Folder Include="Themes\Consilio\Views\Shared\Components\AdminHeaderLinks\" />
+    <Folder Include="Themes\Consilio\Views\Shared\Components\Logo\" />
+    <Folder Include="Themes\Consilio\Views\Shared\Components\Footer\" />
+    <Folder Include="Themes\Consilio\Views\Shared\Components\TopicBlock\" />
+    <Folder Include="Themes\Consilio\Content\fonts\" />
   </ItemGroup>
 
   <!-- This target execute after "Build" target.
