@@ -56,8 +56,7 @@
     {
         Html.AppendHeadCustomParts(seoSettings.CustomHeadTags);
     }
-    var displayMiniProfiler = storeInformationSettings.DisplayMiniProfilerInPublicStore
-        && (!storeInformationSettings.DisplayMiniProfilerForAdminOnly || permissionService.Authorize(StandardPermissionProvider.AccessAdminPanel));
+    var displayMiniProfiler = false;
     //event
     eventPublisher.Publish(new PageRenderingEvent(this.Html));
 }
