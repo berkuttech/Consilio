@@ -3409,7 +3409,7 @@ label, label + * {
 }
 
 .home-page .topic-block {
-  margin: 25px;
+  margin: 5%;
 }
 
 .popup-window .topic-page {
@@ -3503,7 +3503,7 @@ label, label + * {
 .contact-page .topic-block,
 .email-a-friend-page .title,
 .apply-vendor-page .title {
-  margin: 25px 0;
+  margin: 5%;
 }
 
   .email-a-friend-page .title h2 {
