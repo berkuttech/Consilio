@@ -257,7 +257,7 @@ label, label + * {
 .master-wrapper-content {
   position: relative;
   z-index: 0;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -3370,7 +3370,7 @@ label, label + * {
 
 
 .topic-block {
-  margin: 0 0 25px;
+  margin: 25px;
 }
 
 .topic-block-title {
@@ -3381,6 +3381,7 @@ label, label + * {
 }
 
   .topic-block-title h2 {
+    display: flex;
     font-size: 30px;
     font-weight: normal;
     font-family: Grenale-Regular;
@@ -3408,7 +3409,7 @@ label, label + * {
 }
 
 .home-page .topic-block {
-  margin: 0 0 50px;
+  margin: 25px;
 }
 
 .popup-window .topic-page {
@@ -6830,7 +6831,7 @@ pre {
 
   .master-wrapper-content,
   .header-menu {
-    width: 92.5%;
+    width: 100%;
   }
 
 
@@ -7042,7 +7043,7 @@ pre {
 
 
   .master-wrapper-content {
-    width: 94%;
+    width: 100%;
   }
 
   .home-page-polls li {
@@ -7739,7 +7740,7 @@ pre {
 
 
   .master-wrapper-content {
-    width: 980px;
+    width: 100%;
     margin: auto;
   }
 
@@ -8676,7 +8677,7 @@ pre {
 
 
   .master-wrapper-content {
-    width: 1200px;
+    width: 100%;
   }
 
   .inputs label {
