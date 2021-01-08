@@ -8,20 +8,20 @@
             <div class="title">
                 <strong>@T("Footer.Information")</strong>
             </div>
-            <ul class="list">
-                @if (Model.SitemapEnabled && Model.DisplaySitemapFooterItem)
-                {
-                    <li><a href="@Url.RouteUrl("Sitemap")">@T("Sitemap")</a></li>
-                }
-                @foreach (var topic in Model.Topics.Where(x => x.IncludeInFooterColumn1).ToList())
-                {
-                    <li><a href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name</a></li>
-                }
-                @if (Model.DisplayContactUsFooterItem)
-                {
-                    <li><a href="@Url.RouteUrl("ContactUs")">@T("ContactUs")</a></li>
-                }
-            </ul>
+            @*<ul class="list">
+                    @if (Model.SitemapEnabled && Model.DisplaySitemapFooterItem)
+                    {
+                        <li><a href="@Url.RouteUrl("Sitemap")">@T("Sitemap")</a></li>
+                    }
+                    @foreach (var topic in Model.Topics.Where(x => x.IncludeInFooterColumn1).ToList())
+                    {
+                        <li><a href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name</a></li>
+                    }
+                    @if (Model.DisplayContactUsFooterItem)
+                    {
+                        <li><a href="@Url.RouteUrl("ContactUs")">@T("ContactUs")</a></li>
+                    }
+                </ul>*@
         </div>
         <div class="footer-block customer-service">
             <div class="title">

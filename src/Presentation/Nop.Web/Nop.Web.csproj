@@ -84,6 +84,9 @@
         <Folder Include="Themes\Consilio\Views\Shared\Components\Footer\" />
         <Folder Include="Themes\Consilio\Views\Shared\Components\TopicBlock\" />
         <Folder Include="Themes\Consilio\Content\fonts\" />
+        <Folder Include="Themes\Consilio\Views\Topic\" />
+        <Folder Include="Themes\Consilio\Views\Catalog\" />
+        <Folder Include="Themes\Consilio\Views\Shared\Components\TopMenu\" />
     </ItemGroup>
     <!-- This target execute after "Build" target.
     We use it to clean up folder with plugins from unnecessary and obsolete libraries. -->
