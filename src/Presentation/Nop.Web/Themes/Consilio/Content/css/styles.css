@@ -676,7 +676,9 @@ label, label + * {
 
 /*********** NOTIFICATIONS & POPUPS  ***********/
 
-
+.topic-page {
+  margin: 5%;
+}
 
 .bar-notification-container {
   position: fixed;
@@ -8405,13 +8407,10 @@ pre {
     /*    text-align: center;*/
   }
 
-  .topic-page {
-    margin: 5%;
-  }
 
-    .topic-page p {
-      text-align: justify;
-    }
+  .topic-page p {
+    text-align: justify;
+  }
 
 
   /*** REGISTRATION, LOGIN, ACCOUNT ***/
