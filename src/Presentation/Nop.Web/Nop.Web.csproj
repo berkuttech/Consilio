@@ -66,6 +66,26 @@
         <None Include="App_Data\dataSettings.json" CopyToPublishDirectory="PreserveNewest">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </None>
+        <None Remove="Plugins\bin\Nop.Plugin.Widgets.NivoSlider.dll" />
+        <None Remove="Plugins\bin\Nop.Plugin.Widgets.NivoSlider.dll" />
+        <None Remove="Plugins\bin\Nop.Plugin.Widgets.NivoSlider.dll" />
+        <None Remove="Plugins\bin\Nop.Plugin.Widgets.NivoSlider.dll" />
+        <None Remove="Plugins\bin\Nop.Plugin.Widgets.NivoSlider.dll" />
+        <None Remove="Plugins\bin\Nop.Plugin.Widgets.NivoSlider.dll" />
+        <None Remove="Plugins\bin\Nop.Plugin.Widgets.NivoSlider.dll" />
+        <None Remove="Plugins\bin\Nop.Plugin.Widgets.NivoSlider.dll" />
+        <None Remove="Plugins\bin\Nop.Plugin.Widgets.NivoSlider.dll" />
+        <None Remove="Plugins\bin\Nop.Plugin.Widgets.NivoSlider.dll" />
+        <None Remove="Themes\Consilio\Views\Shared\_Root.cshtml" />
+        <Content Include="Themes\Consilio\Views\Shared\_Root.cshtml">
+          <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+          <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </Content>
+        <None Remove="Themes\Consilio\Views\Shared\_Root.Head.cshtml" />
+        <Content Include="Themes\Consilio\Views\Shared\_Root.Head.cshtml">
+          <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+          <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </Content>
     </ItemGroup>
     <ItemGroup>
         <!-- This setting fixes the problem caused by this update in the websdk in vs2019

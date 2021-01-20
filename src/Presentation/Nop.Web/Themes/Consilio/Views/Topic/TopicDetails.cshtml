@@ -78,8 +78,8 @@
                 @T("Topic.EnterPassword")
             </div>
             <div class="enter-password-form">
-                <input name="password" id="password" type="password"/>
-                <input type="submit" id="button-password" value="@T("Topic.Button")" class="button-1 topic-password-button"/>
+                <input name="password" id="password" type="password" />
+                <input type="submit" id="button-password" value="@T("Topic.Button")" class="button-1 topic-password-button" />
             </div>
             <div class="password-error" id="password-error" style="display: none;"></div>
         </form>
@@ -87,7 +87,10 @@
 }
 <div class="page topic-page" id="ph-topic">
     <div class="page-title" id="ph-title">
-        <h1>@Model.Title</h1>
+        <h1>
+            @( Model.Title == "about us" ? "Who We Are" : Model.Title )
+
+        </h1>
     </div>
     <div class="page-body">
         @Html.Raw(Model.Body)
