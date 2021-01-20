@@ -193,9 +193,6 @@
         <None Update="Themes\Consilio\Content\fonts\insigne-grenale-norregit.otf">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </None>
-        <None Update="Themes\Consilio\Content\images\logo.png">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
         <None Update="Themes\Consilio\Views\_ViewImports.cshtml">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </None>

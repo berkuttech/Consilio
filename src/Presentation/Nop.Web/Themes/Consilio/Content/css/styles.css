@@ -360,7 +360,7 @@ label, label + * {
 .topic-page p,
 .post-body p,
 .news-body p {
-  margin: 10px 0;
+  /*  margin: 10px 0;*/
   text-align: justify;
 }
 
@@ -971,9 +971,10 @@ label, label + * {
 .header {
   position: relative;
   z-index: 10;
-  width: 95%;
+  /*  width: 95%;*/
   margin: auto;
   text-align: center;
+  background-image: url('../images/header.png');
 }
 
 .header-upper {
@@ -1074,7 +1075,7 @@ label, label + * {
   /*  position: relative;*/
   display: inline-block;
   z-index: 0;
-  padding: 35px 0 10px;
+  padding: 35px 0 50px;
 }
 
 .header-logo {
@@ -3395,6 +3396,7 @@ label, label + * {
   text-align: justify;
   line-height: 24px;
   font-size: 16px;
+  color: black;
 }
 
 .topic-page .page-body {
@@ -3508,7 +3510,7 @@ label, label + * {
 .contact-page .topic-block,
 .email-a-friend-page .title,
 .apply-vendor-page .title {
-  margin: 5%;
+  margin: 0 5%;
 }
 
   .email-a-friend-page .title h2 {
@@ -7835,7 +7837,7 @@ pre {
 
 
   .header {
-    width: 980px;
+    /*    width: 980px;*/
     margin: auto;
   }
 
@@ -8043,12 +8045,12 @@ pre {
 
   .header-menu {
     position: relative;
-    z-index: 5;
+    z-index: 10;
     width: 980px;
-    margin: 0 auto 30px;
-    border-top: 1px solid #ddd;
+    margin: -50px auto 30px;
+    /*    border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
-    padding: 25px 0;
+    padding: 25px 0;*/
     text-align: center;
   }
 
@@ -8068,7 +8070,7 @@ pre {
 
     .header-menu > ul > li {
       display: inline-block;
-      border-left: 1px solid #ddd;
+      /*      border-left: 1px solid #ddd;*/
       padding: 0 15px;
       vertical-align: middle;
     }
@@ -8082,13 +8084,14 @@ pre {
         padding: 5px 10px;
         line-height: 20px;
         font-size: 17px; /*reset zeroing*/
-        color: #555;
+        font-family: Grenale-Regular, Arial, Helvetica, sans-serif;
+        color: white;
         cursor: pointer;
       }
 
         .header-menu > ul > li > a:hover,
         .header-menu > ul > li > a:focus {
-          color: #024638;
+          color: #C4D600;
         }
 
   .header-menu .sublist {
@@ -8703,7 +8706,7 @@ pre {
 
 
   .header {
-    width: 1200px;
+    /*    width: 1200px;*/
   }
 
 
