@@ -392,6 +392,33 @@ label, label + * {
 }
 
 
+.sub-category-title {
+  height: 100%;
+  background: black;
+  width: 10%;
+  position: absolute;
+  right: 0px;
+  opacity: 0;
+  z-index: 100;
+}
+
+  .sub-category-title span {
+    writing-mode: vertical-rl;
+    color: white;
+    font-family: 'Grenale-Regular';
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    padding: 25%;
+    font-size: 13pt;
+  }
+
+.sub-category-item:hover > .sub-category-title {
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+
+
 /*********** GLOBAL FORMS ***********/
 .fieldset, .section {
   position: relative;
@@ -996,6 +1023,7 @@ label, label + * {
   margin: auto;
   text-align: center;
   background-image: url('../images/header.png');
+  opacity: 0.9;
 }
 
 .header-upper {
@@ -1096,12 +1124,12 @@ label, label + * {
   /*  position: relative;*/
   display: inline-block;
   z-index: 0;
-  padding: 35px 0 50px;
+  padding: 17px 0 26px;
 }
 
 .header-logo {
   width: 200px;
-  margin: 0 0 20px;
+  margin: 0 0 17px;
   text-align: center;
 }
 
@@ -3414,6 +3442,7 @@ label, label + * {
   }
 
 .topic-block-body {
+  position: relative;
   text-align: justify;
   line-height: 24px;
   font-size: 16px;
@@ -8068,7 +8097,7 @@ pre {
     position: relative;
     z-index: 10;
     width: 980px;
-    margin: -50px auto 30px;
+    margin: -37px auto 30px;
     /*    border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     padding: 25px 0;*/

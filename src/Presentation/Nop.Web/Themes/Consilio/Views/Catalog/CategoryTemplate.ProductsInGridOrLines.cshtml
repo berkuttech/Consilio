@@ -43,12 +43,9 @@
         {
 <div class="item-box">
     <div class="sub-category-item">
-        <h2 class="title">
-            <a @*href="@Url.RouteUrl("Category", new { SeName = item.SeName })"*@
-               title="@item.PictureModel.Title">
-                @item.Name
-            </a>
-        </h2>
+        <div class="sub-category-title">
+            <span>@item.Name</span>
+        </div>
         <div class="picture">
             <a @*href="@Url.RouteUrl("Category", new { SeName = item.SeName })"*@
                title="@item.PictureModel.Title">
