@@ -1,12 +1,23 @@
 ﻿@model TopMenuModel.CategoryLineModel
 <li>
-    <a href="@Url.RouteUrl("Category", new { SeName = Model.Category.SeName })">
-        @Model.Category.Name
-        @if (Model.Category.NumberOfProducts.HasValue)
-        {
-            <text> </text>@T("Categories.TotalProducts", Model.Category.NumberOfProducts.Value)
-        }
-    </a>
+    @if (Model.Level != 0)
+    {
+        <a href="@Url.RouteUrl("Category", new { SeName = Model.Category.SeName })">
+            @Model.Category.Name
+            @if (Model.Category.NumberOfProducts.HasValue)
+            {
+                <text> </text>@T("Categories.TotalProducts", Model.Category.NumberOfProducts.Value)
+            }
+        </a>
+    }
+    else
+    { <a href="#">
+            @Model.Category.Name
+            @if (Model.Category.NumberOfProducts.HasValue)
+            {
+                <text> </text>@T("Categories.TotalProducts", Model.Category.NumberOfProducts.Value)
+            }
+        </a>}
     @{
         //subcategories
         var subCategories = Model.ResponsiveMobileMenu ?

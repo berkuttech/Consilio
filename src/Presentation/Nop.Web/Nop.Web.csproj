@@ -107,6 +107,7 @@
         <Folder Include="Themes\Consilio\Views\Topic\" />
         <Folder Include="Themes\Consilio\Views\Catalog\" />
         <Folder Include="Themes\Consilio\Views\Shared\Components\TopMenu\" />
+        <Folder Include="Themes\Consilio\Views\Shared\Components\CategoryNavigation\" />
     </ItemGroup>
     <!-- This target execute after "Build" target.
     We use it to clean up folder with plugins from unnecessary and obsolete libraries. -->

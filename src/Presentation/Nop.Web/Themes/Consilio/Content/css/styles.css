@@ -255,7 +255,7 @@ label, label + * {
 }
 
 .master-wrapper-content {
-  margin-top: 220px !important;
+  margin-top: 120px !important;
   position: relative;
   z-index: 0;
   width: 100%;
@@ -274,6 +274,7 @@ label, label + * {
   }
 
 .center-1 {
+  padding-top: 10px;
   margin: 0 0 100px;
 }
 
@@ -1124,7 +1125,7 @@ label, label + * {
   /*  position: relative;*/
   display: inline-block;
   z-index: 0;
-  padding: 17px 0 26px;
+  padding: 16px 0 0px;
 }
 
 .header-logo {
@@ -3468,6 +3469,11 @@ label, label + * {
 .home-page .topic-block {
   margin: 5%;
 }
+
+/*.page .home-page {
+  margin-top: -150px !important;
+}*/
+
 
 .popup-window .topic-page {
   padding: 15px;
@@ -7803,12 +7809,15 @@ pre {
 
   .center-2 {
     float: right;
-    width: 100%;
+    width: 85%;
+    margin-top: 40px;
   }
 
   .side-2 {
     float: left;
-    width: 25%;
+    width: 15%;
+    padding: 2% 0 2% 2%;
+    margin-top: 40px;
   }
 
   .page {
