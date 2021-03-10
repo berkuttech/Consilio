@@ -48,7 +48,7 @@
             <span>@item.Name</span>
         </div>
         <div class="picture">
-            <a @*href="@Url.RouteUrl("Category", new { SeName = item.SeName })"*@
+            <a href="@Url.RouteUrl("Category", new { SeName = item.SeName })"
                title="@item.PictureModel.Title">
                 <img alt="@item.PictureModel.AlternateText" src="@item.PictureModel.ImageUrl" title="@item.PictureModel.Title" />
             </a>
@@ -74,24 +74,24 @@
     </div>
 </div>}
         @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.CategoryDetailsAfterFeaturedProducts, additionalData = Model })
-        @if (Model.Products.Count > 0)
-        {
-@await Html.PartialAsync("_CatalogSelectors", Model.PagingFilteringContext)}
+        @*@if (Model.Products.Count > 0)
+                    {
+            @await Html.PartialAsync("_CatalogSelectors", Model.PagingFilteringContext)
+                    }*@
         @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.CategoryDetailsBeforeFilters, additionalData = Model })
-        <div class="product-filters">
-            @*filtering*@
-            @if (Model.PagingFilteringContext.PriceRangeFilter.Enabled)
-            {
-@await Html.PartialAsync("_FilterPriceBox", Model.PagingFilteringContext.PriceRangeFilter) } @*filtering*@
-            @if (Model.PagingFilteringContext.SpecificationFilter.Enabled)
-            {
-@await Html.PartialAsync("_FilterSpecsBox", Model.PagingFilteringContext.SpecificationFilter)}
-        </div>
+        @*<div class="product-filters">
+                        @if (Model.PagingFilteringContext.PriceRangeFilter.Enabled)
+                        {
+            @await Html.PartialAsync("_FilterPriceBox", Model.PagingFilteringContext.PriceRangeFilter) }
+                        @if (Model.PagingFilteringContext.SpecificationFilter.Enabled)
+                        {
+            @await Html.PartialAsync("_FilterSpecsBox", Model.PagingFilteringContext.SpecificationFilter)}
+                    </div>*@
         @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.CategoryDetailsBeforeProductList, additionalData = Model })
 
         @if (Model.Products.Count > 0)
         {
-<div class="@(Model.PagingFilteringContext.ViewMode == "list" ? "product-list" : "product-grid")">
+<div class="@(Model.PagingFilteringContext.ViewMode == "list" ? "product-list" : "category-grid sub-category-grid")">
     <div class="item-grid">
         @foreach (var product in Model.Products)
         {

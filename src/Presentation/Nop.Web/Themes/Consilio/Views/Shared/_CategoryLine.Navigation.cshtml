@@ -32,19 +32,15 @@
 <li class="@liClass">
     @if (Model.Category.SeName != "product")
     {
-        if (Model.Category.HaveSubCategories)
-        {
-            <a href="@Url.RouteUrl("Category", new { SeName = Model.Category.SeName })">
-                @Model.Category.Name
-                @if (Model.Category.NumberOfProducts.HasValue)
+
+        <a href="@Url.RouteUrl("Category", new { SeName = Model.Category.SeName })">
+            @Model.Category.Name
+            @*@if (Model.Category.NumberOfProducts.HasValue)
                 {
                     <text> </text>@T("Categories.TotalProducts", Model.Category.NumberOfProducts.Value)
-                }
-            </a>}
-        else
-        {
-            @Model.Category.Name
-        }
+                }*@
+        </a>
+
     }
     @{
         if (Model.Category.Id == Model.CurrentCategoryId ||

@@ -67,22 +67,26 @@
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </None>
         <None Remove="Plugins\bin\Nop.Plugin.Widgets.NivoSlider.dll" />
-        <None Remove="Plugins\bin\Nop.Plugin.Widgets.NivoSlider.dll" />
-        <None Remove="Plugins\bin\Nop.Plugin.Widgets.NivoSlider.dll" />
-        <None Remove="Plugins\bin\Nop.Plugin.Widgets.NivoSlider.dll" />
-        <None Remove="Plugins\bin\Nop.Plugin.Widgets.NivoSlider.dll" />
-        <None Remove="Plugins\bin\Nop.Plugin.Widgets.NivoSlider.dll" />
-        <None Remove="Plugins\bin\Nop.Plugin.Widgets.NivoSlider.dll" />
-        <None Remove="Plugins\bin\Nop.Plugin.Widgets.NivoSlider.dll" />
-        <None Remove="Plugins\bin\Nop.Plugin.Widgets.NivoSlider.dll" />
-        <None Remove="Plugins\bin\Nop.Plugin.Widgets.NivoSlider.dll" />
         <None Remove="Themes\Consilio\Views\Shared\_Root.cshtml" />
         <Content Include="Themes\Consilio\Views\Shared\_Root.cshtml">
-          <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-          <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+            <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
         </Content>
         <None Remove="Themes\Consilio\Views\Shared\_Root.Head.cshtml" />
         <Content Include="Themes\Consilio\Views\Shared\_Root.Head.cshtml">
+            <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </Content>
+        <None Remove="Plugins\bin\Nop.Plugin.Widgets.NivoSlider.dll" />
+        <None Remove="Plugins\bin\Nop.Plugin.Widgets.NivoSlider.dll" />
+        <None Remove="Plugins\bin\Nop.Plugin.Widgets.NivoSlider.dll" />
+        <None Remove="Plugins\bin\Nop.Plugin.Widgets.NivoSlider.dll" />
+        <None Remove="Plugins\bin\Nop.Plugin.Widgets.NivoSlider.dll" />
+        <None Remove="Plugins\bin\Nop.Plugin.Widgets.NivoSlider.dll" />
+        <None Remove="Plugins\bin\Nop.Plugin.Widgets.NivoSlider.dll" />
+        <None Remove="Plugins\bin\Nop.Plugin.Widgets.NivoSlider.dll" />
+        <None Remove="Themes\Consilio\Views\Shared\_ProductBox.cshtml" />
+        <Content Include="Themes\Consilio\Views\Shared\_ProductBox.cshtml">
           <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
           <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
         </Content>
@@ -108,6 +112,7 @@
         <Folder Include="Themes\Consilio\Views\Catalog\" />
         <Folder Include="Themes\Consilio\Views\Shared\Components\TopMenu\" />
         <Folder Include="Themes\Consilio\Views\Shared\Components\CategoryNavigation\" />
+        <Folder Include="Themes\Consilio\Content\topics\" />
     </ItemGroup>
     <!-- This target execute after "Build" target.
     We use it to clean up folder with plugins from unnecessary and obsolete libraries. -->

@@ -5,23 +5,29 @@
     {
         <li><a href="@Url.RouteUrl("Homepage")">@T("Homepage")</a></li>
     }
-    @if (!Model.UseAjaxMenu)
-    {
-        var rootCategories = Model.Categories.Where(x => x.IncludeInTopMenu).ToList();
-        @foreach (var category in rootCategories)
-        {
-            var categoryLineModel = new TopMenuModel.CategoryLineModel
-            {
-                Category = category
-            };
-            @await Html.PartialAsync("_CategoryLine.TopMenu", categoryLineModel)
-        }
 
-
-    }
     @foreach (var topic in Model.Topics)
     {
         <li><a href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name</a></li>
+        if (topic.SeName == "services")
+        {
+            @if (!Model.UseAjaxMenu)
+            {
+                var rootCategories = Model.Categories.Where(x => x.IncludeInTopMenu).ToList();
+                @foreach (var category in rootCategories)
+                {
+                    var categoryLineModel = new TopMenuModel.CategoryLineModel
+                    {
+                        Category = category
+                    };
+                    @await Html.PartialAsync("_CategoryLine.TopMenu", categoryLineModel)
+                }
+
+
+            }
+        }
+
+
     }
     @if (Model.NewProductsEnabled && Model.DisplayNewProductsMenuItem)
     {
@@ -53,29 +59,33 @@
     var rootCategoriesResponsive = Model.Categories.ToList();
     //name it "Categories" if we have only categories. Otherwise, "Menu"
     var responsiveMenuTitle = Model.HasOnlyCategories ? T("Categories") : T("Menu");
-    <div class="menu-toggle">@responsiveMenuTitle</div>
+    <img class="menu-toggle" />
     <ul class="top-menu mobile">
         @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.MobHeaderMenuBefore })
         @if (Model.DisplayHomepageMenuItem)
         {
             <li><a href="@Url.RouteUrl("Homepage")">@T("Homepage")</a></li>
         }
-        @if (!Model.UseAjaxMenu)
-        {
-            @foreach (var category in rootCategoriesResponsive)
-            {
-                var categoryLineModel = new TopMenuModel.CategoryLineModel
-                {
-                    Category = category,
-                    ResponsiveMobileMenu = true
-                };
-                @await Html.PartialAsync("_CategoryLine.TopMenu", categoryLineModel)
-            }
 
-        }
         @foreach (var topic in Model.Topics)
         {
             <li><a href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name</a></li>
+            if (topic.SeName == "services")
+            {
+                @if (!Model.UseAjaxMenu)
+                {
+                    @foreach (var category in rootCategoriesResponsive)
+                    {
+                        var categoryLineModel = new TopMenuModel.CategoryLineModel
+                        {
+                            Category = category,
+                            ResponsiveMobileMenu = true
+                        };
+                        @await Html.PartialAsync("_CategoryLine.TopMenu", categoryLineModel)
+                    }
+
+                }
+            }
         }
         @if (Model.NewProductsEnabled && Model.DisplayNewProductsMenuItem)
         {

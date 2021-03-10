@@ -1,34 +1,37 @@
 ﻿@model ContactUsModel
 @{ Layout = "_ColumnsOne";
 
-                //title
-                Html.AddTitleParts(T("PageTitle.ContactUs").Text);
-                //page class
-                Html.AppendPageCssClassParts("html-contact-page"); }
-<div class="page contact-page">
-    <div class="page-body">
-        @await Component.InvokeAsync("TopicBlock", new { systemName = "ContactUs" })
+    //title
+    Html.AddTitleParts(T("PageTitle.ContactUs").Text);
+    //page class
+    Html.AppendPageCssClassParts("html-contact-page"); }
+<div class="page topic-page">
+    <div class="page-title">
+        <h1>CONTACT US</h1>
+    </div>
+    <div class="page-body" style="text-align:center !important;">
+        @*@await Component.InvokeAsync("TopicBlock", new { systemName = "ContactUs" })*@
         @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ContactUsTop })
         @if (Model.SuccessfullySent)
         {
 <div class="result">
     @Model.Result
 </div> }
-            else
-            {
+else
+{
 <form asp-route="ContactUs" method="post">
     <div asp-validation-summary="ModelOnly" class="message-error"></div>
     <div class="fieldset">
         <div class="form-fields">
             <div class="inputs">
                 <label asp-for="FullName" asp-postfix=":"></label>
-                <input asp-for="FullName" placeholder="@T("ContactUs.FullName.Hint")" class="fullname" />
+                <input asp-for="FullName" class="fullname" />
                 <nop-required />
                 <span asp-validation-for="FullName"></span>
             </div>
             <div class="inputs">
                 <label asp-for="Email" asp-postfix=":"></label>
-                <input asp-for="Email" placeholder="@T("ContactUs.Email.Hint")" class="email" />
+                <input asp-for="Email" class="email" />
                 <nop-required />
                 <span asp-validation-for="Email"></span>
             </div>
@@ -36,13 +39,13 @@
             {
 <div class="inputs">
     <label asp-for="Subject" asp-postfix=":"></label>
-    <input asp-for="Subject" placeholder="@T("ContactUs.Subject.Hint")" class="subject" />
+    <input asp-for="Subject" class="subject" />
     <nop-required />
     <span asp-validation-for="Subject"></span>
 </div>}
             <div class="inputs">
                 <label asp-for="Enquiry" asp-postfix=":"></label>
-                <textarea asp-for="Enquiry" placeholder="@T("ContactUs.Enquiry.Hint")" class="enquiry"></textarea>
+                <textarea asp-for="Enquiry" class="enquiry"></textarea>
                 <nop-required />
                 <span asp-validation-for="Enquiry"></span>
             </div>
@@ -56,5 +59,23 @@
     </div>
 </form>}
         @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ContactUsBottom })
+
+        <div class="contactus-mapcontainer">
+            <iframe class="contactus-iframe" width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+                    src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJUdxMZASwyhQR3eWbDZs1UKk&key=AIzaSyAhP846jeam5fFtIk9GffanuxS8Xe0hH6Q"></iframe>
+            <div class="contactus-address">
+                <p class="contactus-topic">
+                    TURKEY
+                </p>
+                <span class="contactus-mapaddressdetail">Oruçreis Mah. Tekstilkent Caddesi No: A 23 / 13 34235 Esenler İstanbul</span>
+            </div>
+        </div>
+        <div class="contactus-mapcontainer">
+            <iframe class="contactus-iframe" width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:EiQ0MDUgTkUgOTB0aCBTdCwgTWlhbWksIEZMIDMzMTM4LCBVU0EiURJPCjQKMgndPxTgLrLZiBHSxeMUsBnMfxoeCxDuwe6hARoUChIJlQkV0iuy2YgR07LmW0VrF2MMEJUDKhQKEgkB3ZcIKbLZiBE7g221omOjaw&key=AIzaSyAhP846jeam5fFtIk9GffanuxS8Xe0hH6Q"></iframe>
+            <div class="contactus-address">
+                <p class="contactus-topic">USA</p>
+                <span class="contactus-mapaddressdetail">405 NE 90th Street, Miami, FL 33138</span>
+            </div>
+        </div>
     </div>
 </div>
