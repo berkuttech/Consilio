@@ -1700,6 +1700,7 @@ label, label + * {
   .aboutus-content p {
     font-size: 20px;
     margin-bottom: 15px;
+    font-family: Aspen-Light;
   }
 
 .aboutus-image {
@@ -3515,6 +3516,59 @@ label, label + * {
   color: black;
 }
 
+  .topic-block-body .first-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.first-section .topic {
+  font-family: Grenale-Bold;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+
+.first-section-content {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+  .first-section-content p {
+    font-family: Aspen-Light;
+    font-size: 18px;
+  }
+
+.first-section-image {
+  overflow-x: hidden;
+}
+
+.first-section-products {
+  float: right;
+  margin-top: 50px;
+}
+
+.first-section-image img {
+  height: auto;
+  width: 100%;
+}
+
+.first-section-products .topic {
+  font-family: Grenale-Bold;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+
+.second-section {
+  margin-top: 100px;
+}
+
+  .second-section .topic {
+    font-family: Grenale-Bold;
+    font-size: 22px;
+  }
+
+
 .topic-page .page-body {
   text-align: justify;
   line-height: 22px;
@@ -3538,6 +3592,9 @@ label, label + * {
 /*.page .home-page {
   margin-top: -150px !important;
 }*/
+
+
+
 
 
 .popup-window .topic-page {
@@ -7889,6 +7946,58 @@ pre {
 
 
 @media all and (min-width: 1001px) {
+
+
+
+  .topic-block-body .first-section {
+    display: block;
+  }
+
+  .first-section .topic {
+    font-family: Grenale-Bold;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+
+  .first-section-content {
+    display: inline-block;
+    width: 48%;
+    float: left;
+  }
+
+    .first-section-content p {
+      font-family: Aspen-Light;
+      font-size: 24px;
+    }
+
+  .first-section-image {
+    display: inline-block;
+    width: 51%;
+    padding: 0px 40px;
+    overflow-x: hidden;
+  }
+
+  .first-section-products {
+    float: right;
+    margin-top: 50px;
+  }
+
+    .first-section-products .topic {
+      font-family: Grenale-Bold;
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+
+
+  .second-section {
+    margin-top: 100px;
+  }
+
+    .second-section .topic {
+      font-family: Grenale-Bold;
+      font-size: 30px;
+    }
 
 
   /*** GLOBAL STYLES ***/
