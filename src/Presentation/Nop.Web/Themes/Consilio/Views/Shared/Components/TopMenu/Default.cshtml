@@ -8,7 +8,15 @@
 
     @foreach (var topic in Model.Topics)
     {
-        <li><a href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name</a></li>
+        if (topic.SeName == "contactus")
+        {
+            <li><a href="/contactus">@topic.Name</a></li>
+
+        }
+        else
+        {
+            <li><a href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name</a></li>
+        }
         if (topic.SeName == "services")
         {
             @if (!Model.UseAjaxMenu)
@@ -51,7 +59,7 @@
     }
     @if (Model.DisplayContactUsMenuItem)
     {
-        <li><a href="@Url.RouteUrl("ContactUs")">@T("ContactUs")</a></li>
+        <li><a href="/contactus">@T("ContactUs")</a></li>
     }
     @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderMenuAfter })
 </ul>
@@ -69,7 +77,15 @@
 
         @foreach (var topic in Model.Topics)
         {
-            <li><a href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name</a></li>
+            if (topic.SeName == "contactus")
+            {
+                <li><a href="/contactus">@topic.Name</a></li>
+
+            }
+            else
+            {
+                <li><a href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name</a></li>
+            }
             if (topic.SeName == "services")
             {
                 @if (!Model.UseAjaxMenu)
@@ -109,7 +125,7 @@
         }
         @if (Model.DisplayContactUsMenuItem)
         {
-            <li><a href="@Url.RouteUrl("ContactUs")">@T("ContactUs")</a></li>
+            <li><a href="/contactus">@T("ContactUs")</a></li>
         }
         @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.MobHeaderMenuAfter })
     </ul>

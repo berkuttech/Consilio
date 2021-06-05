@@ -432,12 +432,73 @@ label, label + * {
   margin-top: 40px;
 }
 
-  .services-flex-container img {
-    padding: 10px;
-    height: 460px;
-    width: 375px;
+  .services-flex-container div {
+    flex-basis: 33%;
+    text-align: center;
   }
 
+    .services-flex-container div img {
+      padding: 10px;
+      height: 460px;
+      width: 375px;
+    }
+
+.aboutus-team-container {
+  text-align: center;
+  width: 100%;
+}
+
+.aboutus-team-inner-container {
+  margin-top: 60px;
+}
+
+.aboutus-team-text {
+  font-size: 50px;
+  text-align: center !important;
+  font-weight: bolder;
+  color: #aaa;
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+
+.aboutus-team-seperator {
+  height: 7px;
+  width: 100px;
+  background: rgb(179, 35, 35);
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+.aboutus-team-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 31px;
+}
+
+.aboutus-team-image-holder {
+  position: relative;
+  margin: 0 40px 40px 40px;
+}
+
+.aboutus-team-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #eee;
+}
+
+.aboutus-team-member {
+  text-align: center !important;
+}
+
+.aboutus-team-title {
+  text-align: center !important;
+  font-weight: 900;
+  color: rgb(255, 111, 0);
+}
 
 
 /*********** GLOBAL FORMS ***********/
@@ -7129,7 +7190,7 @@ pre {
 
   .item-box {
     width: 49%;
-    margin: 0 0.5% 50px;
+    margin: 0 0.5% 1%;
   }
 
     .item-box:nth-child(2n+1) {
@@ -7380,7 +7441,7 @@ pre {
 
   .item-box {
     width: 32.33333%;
-    margin: 0 0.5% 50px;
+    margin: 0 0.5% 1%;
   }
 
     .item-box:nth-child(2n+1) {
@@ -8016,7 +8077,7 @@ pre {
   .side-2 {
     float: left;
     width: 15%;
-    padding: 0% 0 2% 2%;
+    padding: 4% 0 2% 2%;
   }
 
   .page {
@@ -8446,7 +8507,7 @@ pre {
   .product-details-page .product-grid .item-box,
   .shopping-cart-page .product-grid .item-box {
     width: 24%;
-    margin: 0 0.5% 50px;
+    margin: 0 0.5% 1%;
   }
 
     .home-page .product-grid .item-box:nth-child(3n+1),
